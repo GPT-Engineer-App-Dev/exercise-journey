@@ -32,6 +32,12 @@ const Index = () => {
               <Button colorScheme="blue">Log a Workout</Button>
             </Link>
           </Box>
+          <Box bg="white" p={4} borderRadius="md" boxShadow="md">
+            <Heading size="md" mb={2}>Progress Tracking</Heading>
+            <Link to="/progress-tracking">
+              <Button colorScheme="blue">View Progress</Button>
+            </Link>
+          </Box>
         </VStack>
       </Box>
     </Container>
