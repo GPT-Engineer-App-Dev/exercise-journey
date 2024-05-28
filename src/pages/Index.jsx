@@ -1,5 +1,6 @@
-import { Box, Container, VStack, Text, Flex, Spacer, IconButton, Heading } from "@chakra-ui/react";
+import { Box, Container, VStack, Text, Flex, Spacer, IconButton, Heading, Button } from "@chakra-ui/react";
 import { FaHome, FaChartLine, FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Index = () => {
   return (
@@ -24,6 +25,12 @@ const Index = () => {
           <Box bg="white" p={4} borderRadius="md" boxShadow="md">
             <Heading size="md" mb={2}>Data Visualization</Heading>
             <Text>Placeholder for charts and graphs.</Text>
+          </Box>
+          <Box bg="white" p={4} borderRadius="md" boxShadow="md">
+            <Heading size="md" mb={2}>Workout Logging</Heading>
+            <Link to="/workout-log">
+              <Button colorScheme="blue">Log a Workout</Button>
+            </Link>
           </Box>
         </VStack>
       </Box>
